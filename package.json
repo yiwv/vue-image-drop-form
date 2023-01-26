@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": false,
   "description": "",
-  "main": "dist/image-form.common.js",
-  "unpkg": "./dist/image-form.umd.min.js",
-  "jsdelivr": "./dist/image-form.umd.min.js",
+  "main": "dist/image-form.es.js",
+  "unpkg": "./dist/image-form.umd.js",
+  "jsdelivr": "./dist/image-form.umd.js",
   "license": "MIT",
   "author": "yiwv",
   "files": [
