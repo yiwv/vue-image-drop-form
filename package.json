@@ -1,9 +1,10 @@
 {
   "name": "image-form-vue",
-  "version": "0.1.1",
+  "version": "0.1.4",
   "private": false,
   "description": "",
-  "main": "dist/image-form.es.js",
+  "main": "./dist/image-form.umd.js",
+  "module": "./dist/image-form.es.js",
   "unpkg": "./dist/image-form.umd.js",
   "jsdelivr": "./dist/image-form.umd.js",
   "license": "MIT",
