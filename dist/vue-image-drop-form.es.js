@@ -1,16 +1,16 @@
-import { ref as u, computed as D, onMounted as k, openBlock as c, createElementBlock as d, Fragment as L, createElementVNode as p, unref as v, toDisplayString as b, createCommentVNode as y } from "vue";
-const h = (r, s) => {
+import { ref as u, computed as D, onMounted as k, openBlock as c, createElementBlock as d, createElementVNode as p, unref as v, toDisplayString as L, createCommentVNode as y } from "vue";
+const b = (r, s) => {
   const a = r.__vccOpts || r;
   for (const [o, i] of s)
     a[o] = i;
   return a;
-}, E = {
+}, h = {
   key: 0,
   class: "select-label"
-}, I = {
+}, E = {
   key: 1,
   class: "image-wrapper"
-}, R = ["src"], V = {
+}, I = ["src"], R = {
   __name: "VueImageDropForm",
   props: {
     label: { type: String, default: "Select file" }
@@ -35,32 +35,32 @@ const h = (r, s) => {
       }), n && n.addEventListener("change", (e) => {
         e.target.files && _(e.target.files);
       }));
-    }), (t, n) => (c(), d(L, null, [
+    }), (t, n) => (c(), d("div", null, [
       p("div", {
         ref_key: "fileDropzoneRef",
         ref: i,
         class: "file-dropzone"
       }, [
-        v(l) ? y("", !0) : (c(), d("div", E, b(a.label), 1)),
-        v(l) ? (c(), d("div", I, [
+        v(l) ? y("", !0) : (c(), d("div", h, L(a.label), 1)),
+        v(l) ? (c(), d("div", E, [
           p("img", {
             src: v(l),
             class: "image-preview"
-          }, null, 8, R)
+          }, null, 8, I)
         ])) : y("", !0)
       ], 512),
       p("input", {
         ref_key: "fileInputRef",
         ref: o,
-        onChange: n[0] || (n[0] = (...e) => t.fileChanged && t.fileChanged(...e)),
         type: "file",
-        class: "file-input"
+        class: "file-input",
+        onChange: n[0] || (n[0] = (...e) => t.fileChanged && t.fileChanged(...e))
       }, null, 544)
-    ], 64));
+    ]));
   }
-}, F = /* @__PURE__ */ h(V, [["__scopeId", "data-v-25ab0715"]]);
+}, V = /* @__PURE__ */ b(R, [["__scopeId", "data-v-fb518815"]]);
 function m(r) {
-  m.installed || (m.installed = !0, r.component("VueImageDropForm", F));
+  m.installed || (m.installed = !0, r.component("VueImageDropForm", V));
 }
 const w = {
   install: m
@@ -69,6 +69,6 @@ let g = null;
 typeof window < "u" && (g = window.Vue);
 g && g.use(w);
 export {
-  F as default,
+  V as default,
   m as install
 };

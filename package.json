@@ -1,8 +1,8 @@
 {
   "name": "vue-image-drop-form",
-  "version": "0.1.4",
+  "version": "0.1.6",
   "private": false,
-  "description": "",
+  "description": "A Vue 3 component for easy image selection, drag-and-drop, and preview.",
   "main": "./dist/vue-image-drop-form.umd.js",
   "module": "./dist/vue-image-drop-form.es.js",
   "unpkg": "./dist/vue-image-drop-form.umd.js",
