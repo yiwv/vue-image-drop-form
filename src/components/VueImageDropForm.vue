@@ -2,7 +2,7 @@
 import { ref, onMounted, computed, defineEmits, defineProps } from 'vue'
 const emit = defineEmits(['change'])
 const props = defineProps({
-  label: { type: String, default: 'ファイルを選択' }
+  label: { type: String, default: 'Select file' }
 })
 const fileInputRef = ref(null)
 const fileDropzoneRef = ref(null)
@@ -10,14 +10,17 @@ const imageFile = ref(null)
 
 const selectFile = (fileList) => {
   emit('change', Array.from(fileList)[0])
+  if (imageUrl.value !== '') {
+    URL.revokeObjectURL(imageUrl)
+  }
   imageFile.value = Array.from(fileList)[0]
 }
 
 const imageUrl = computed(() => {
   if (!imageFile.value) {
-    return '';
+    return ''
   }
-  return URL.createObjectURL(imageFile.value);
+  return URL.createObjectURL(imageFile.value)
 })
 
 onMounted(() => {
