@@ -1,12 +1,27 @@
+# Vue Image Drop Form
 
-# Image Form Vue
+A simple Vue 3 component for image file selection, drag-and-drop, and preview functionality.
 
-A simple Vue 3 component for image file selection and preview.
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Props](#props)
+- [Events](#events)
+- [Running Tests](#running-tests)
 
 ## Installation
 
+Install the package using npm:
+
 ```bash
-npm install image-form-vue
+npm install vue-image-drop-form
+```
+
+Or using yarn:
+
+```bash
+yarn add vue-image-drop-form
 ```
 
 ## Usage
@@ -14,10 +29,10 @@ npm install image-form-vue
 Here is a simple example:
 
 ```javascript
-import ImageForm from 'image-form-vue'
+import VueImageDropForm from 'vue-image-drop-form'
 
-// in your component
-<ImageForm label="Select File" @change="handleFileChange" />
+// In your Vue component
+<VueImageDropForm label="Upload Image" @change="handleImageChange" />
 ```
 
 ## Props
@@ -35,4 +50,3 @@ To run tests, execute the following command:
 ```bash
 npm run test
 ```
-

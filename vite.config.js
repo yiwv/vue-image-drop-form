@@ -6,8 +6,8 @@ module.exports = defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, "src/index.js"),
-      name: "ImageForm",
-      fileName: (format) => `image-form.${format}.js`,
+      name: "VueImageDropForm",
+      fileName: (format) => `vue-image-drop-form.${format}.js`,
     },
     rollupOptions: {
       external: ["vue"],

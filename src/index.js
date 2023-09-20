@@ -1,10 +1,10 @@
 
-import ImageForm from './components/ImageForm.vue'
+import VueImageDropForm from './components/VueImageDropForm.vue'
 
 export function install (Vue) {
   if (install.installed) return
   install.installed = true
-  Vue.component('ImageForm', ImageForm)
+  Vue.component('VueImageDropForm', VueImageDropForm)
 }
 
 const plugin = {
@@ -19,4 +19,4 @@ if (GlobalVue) {
   GlobalVue.use(plugin)
 }
 
-export default ImageForm
+export default VueImageDropForm

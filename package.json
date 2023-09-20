@@ -1,12 +1,12 @@
 {
-  "name": "image-form-vue",
+  "name": "vue-image-drop-form",
   "version": "0.1.4",
   "private": false,
   "description": "",
-  "main": "./dist/image-form.umd.js",
-  "module": "./dist/image-form.es.js",
-  "unpkg": "./dist/image-form.umd.js",
-  "jsdelivr": "./dist/image-form.umd.js",
+  "main": "./dist/vue-image-drop-form.umd.js",
+  "module": "./dist/vue-image-drop-form.es.js",
+  "unpkg": "./dist/vue-image-drop-form.umd.js",
+  "jsdelivr": "./dist/vue-image-drop-form.umd.js",
   "license": "MIT",
   "author": "yiwv",
   "files": [
@@ -27,12 +27,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yiwv/image-form-vue.git"
+    "url": "git+https://github.com/yiwv/vue-image-drop-form.git"
   },
   "bugs": {
-    "url": "https://github.com/yiwv/image-form-vue/issues"
+    "url": "https://github.com/yiwv/vue-image-drop-form/issues"
   },
-  "homepage": "https://github.com/yiwv/image-form-vue#readme",
+  "homepage": "https://github.com/yiwv/vue-image-drop-form#readme",
   "dependencies": {
     "vue": "^3.2.45"
   },
