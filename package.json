@@ -22,7 +22,8 @@
   "scripts": {
     "build": "vite build",
     "lint": "eslint --ext .js,.vue src tests --fix",
-    "prepare": "npm run build"
+    "prepare": "npm run build",
+    "test": "vitest"
   },
   "repository": {
     "type": "git",
