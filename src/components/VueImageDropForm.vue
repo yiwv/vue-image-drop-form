@@ -66,19 +66,34 @@ onMounted(() => {
 </script>
 
 <template>
-  <div ref="fileDropzoneRef" class="file-dropzone">
-    <div v-if="!imageUrl" class="select-label">
-      {{ props.label }}
+  <div>
+    <div
+      ref="fileDropzoneRef"
+      class="file-dropzone"
+    >
+      <div
+        v-if="!imageUrl"
+        class="select-label"
+      >
+        {{ props.label }}
+      </div>
+      <div
+        v-if="imageUrl"
+        class="image-wrapper"
+      >
+        <img
+          :src="imageUrl"
+          class="image-preview"
+        >
+      </div>
     </div>
-    <div v-if="imageUrl" class="image-wrapper">
-      <img :src="imageUrl" class="image-preview" />
-    </div>
+    <input
+      ref="fileInputRef"
+      type="file"
+      class="file-input"
+      @change="fileChanged"
+    >
   </div>
-  <input
-    ref="fileInputRef"
-    @change="fileChanged"
-    type="file"
-    class="file-input" />
 </template>
 
 <style scoped>

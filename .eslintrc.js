@@ -12,9 +12,16 @@ module.exports = {
         "sourceType": "module"
     },
     "plugins": [
-        "vue"
+        "vue",
+        "vitest"
+    ],
+    "extends": [
+        "plugin:vue/recommended",
+        "plugin:vitest/recommended"
     ],
     "rules": {
-        "semi": ["error", "never"]
+        "semi": ["error", "never"],
+        "vitest/consistent-test-it": ["error", {"fn": "it"}],
+        "vitest/require-top-level-describe": ["error"]
     }
 }
