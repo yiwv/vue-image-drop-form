@@ -18,9 +18,9 @@ const selectFile = (fileList) => {
 
 const imageUrl = computed(() => {
   if (!imageFile.value) {
-    return '';
+    return ''
   }
-  return URL.createObjectURL(imageFile.value);
+  return URL.createObjectURL(imageFile.value)
 })
 
 onMounted(() => {
