@@ -7,8 +7,6 @@ module.exports = {
         "eslint:recommended",
         "plugin:vue/vue3-essential"
     ],
-    "overrides": [
-    ],
     "parserOptions": {
         "ecmaVersion": "latest",
         "sourceType": "module"
@@ -17,5 +15,6 @@ module.exports = {
         "vue"
     ],
     "rules": {
+        "semi": ["error", "never"]
     }
 }
