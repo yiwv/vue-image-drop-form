@@ -10,6 +10,9 @@ const imageFile = ref(null)
 
 const selectFile = (fileList) => {
   emit('change', Array.from(fileList)[0])
+  if (imageUrl.value !== '') {
+    URL.revokeObjectURL(imageUrl)
+  }
   imageFile.value = Array.from(fileList)[0]
 }
 
