@@ -2,7 +2,7 @@
 import { ref, onMounted, computed, defineEmits, defineProps } from 'vue'
 const emit = defineEmits(['change'])
 const props = defineProps({
-  label: { type: String, default: 'ファイルを選択' }
+  label: { type: String, default: 'Select file' }
 })
 const fileInputRef = ref(null)
 const fileDropzoneRef = ref(null)
